@@ -79,7 +79,7 @@ Applied a background-color to the relevant class.
 
 ## Author
 
-- Website - [Nicole Analise Cox](https://www.nicoleanalisecox.co.uk
+- Website - [Nicole Analise Cox](https://www.nicoleanalisecox.co.uk)
 - Frontend Mentor - [@nicoleanalisecox](https://www.frontendmentor.io/profile/nicoleanalisecox)
 - Instagram - [@nicolencode](https://www.instagram.com/nicolencode_)
 - Twitter - [@_nicoleanalise](https://www.twitter.com/_nicoleanalise_)
