@@ -60,7 +60,7 @@ body {
 }
 
 .name-field {
-    color: hsl(228%, 23%, 23%);
+    color: hsl(229, 23%, 23%);
     font-size: 18px;
     font-weight: 700;
 }
@@ -90,7 +90,7 @@ body {
 }
 
 .numerical-info {
-    color: hsl(228%, 23%, 23%);
+    color: hsl(229, 23%, 23%);
     font-weight: 700;
     margin-bottom: 6px;
 }
