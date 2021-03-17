@@ -75,7 +75,6 @@ There was a slight gap between the border of the circular image and the image it
 ### Solution:
 Applied a background-color to the relevant class. 
 
-```
 
 
 ## Author
