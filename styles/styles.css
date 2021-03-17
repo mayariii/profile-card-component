@@ -1,119 +1,117 @@
+body {
+    /* background */
+    background-color: hsl(185, 75%, 39%);
+    background-image: url("../images/bg-pattern-top.svg"),
+        url("../images/bg-pattern-bottom.svg");
+    background-position: bottom -50vh right 50vw,
+        left 50vw top 50vh;
+    background-repeat: no-repeat;
 
-    body {
-        text-align: center;
-        font-family: 'Kumbh Sans',
+    /* text */
+    font-family: 'Kumbh Sans',
         sans-serif;
-        background-color: hsl(185, 75%, 39%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
+    text-align: center;
 
+    /* flexbox properties */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.main-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 350px;
+    height: 374px;
+    margin: auto;
+}
+
+/* media query to adjust width for mobile */
+@media screen and (max-width: 376px) {
     .main-card {
-        background-color: white;
-        border-radius: 15px;
-        width: 350px;
-        height: 374px;
-        margin: auto;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        width: 326px;
     }
+}
 
-    @media (min-width: 375px) {
-        .main-card {
-            width: 326;
-        }
-    }
+/* centres the card to centre of page */
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
-    .centered {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+/* main area of profile card  with img, name, age, location */
+.main-profile {
+    background-image: url("../images/bg-pattern-card.svg");
+    background-repeat: no-repeat;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 
-    .main-profile {
-        background-image: url("../images/bg-pattern-card.svg");
-        background-repeat: no-repeat;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
+}
 
-    }
+.profile-img {
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 100%;
+    margin-top: 90px;
+}
 
-    .profile-img {
-        background-color: white;
-        border: 5px solid white;
-        border-radius: 100%;
-        margin-top: 90px;
-    }
+.name-field {
+    color: hsl(228%, 23%, 23%);
+    font-size: 18px;
+    font-weight: 700;
+}
 
-    .name-field {
-        font-weight: 700;
-        font-size: 18px;
-        color: hsl(228%, 23%, 23%);
-    }
+.age-field {
+    color: hsl(228, 10%, 47%);
+    font-size: 18px;
+    font-weight: 400;
+}
 
-    .age-field {
-        font-weight: 400;
-        font-size: 18px;
-        color: hsl(228, 10%, 47%);
-    }
+.location-field {
+    color: hsl(228, 10%, 47%);
+    font-size: 14px;
+}
 
-    .location-field {
-        color: hsl(228, 10%, 47%);
-        font-size: 14px;
-    }
+/* bottom field of main card, showing stats */
 
-    .profile-info {
-        border-top: 1px solid hsl(228, 9%, 92%);
-        display: flex;
-        justify-content: space-evenly;
-    }
+.profile-info {
+    border-top: 1px solid hsl(228, 9%, 92%);
+    /* flexbox properties */
+    display: flex;
+    justify-content: space-evenly;
+}
 
-    .info-section {
-      padding: 15px;
-    }
+.info-section {
+    padding: 15px;
+}
 
-    .numerical-info {
-        font-weight: 700;
-        color: hsl(228%,23%,23%);
-        margin-bottom: 6px;
-    }
+.numerical-info {
+    color: hsl(228%, 23%, 23%);
+    font-weight: 700;
+    margin-bottom: 6px;
+}
 
-    .description-info {
-        font-weight: 400;
-        font-size: 10px;
-        color: hsl(228%, 10%, 47%);
-        margin-top: 6px;
-        letter-spacing: 1.5px;
-    }
+.description-info {
+    color: hsl(228, 10%, 47%);
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    margin-top: 6px;
+}
 
-    .attribution {
-        font-size: 9px;
-        text-align: center;
-        color: white;
-        padding: 5%;
-        opacity: 50%;
-    }
+/* front end mentor attribution */
+.attribution {
+    color: white;
+    font-size: 9px;
+    text-align: center;
+    padding: 5%;
+    opacity: 50%;
+}
 
-    .attribution a {
-        color: white;
-    }
-
-    .circle-top {
-        position: fixed;
-        width: 978px;
-        height: 976px;
-        left: -300px;
-        top: -400px;
-    }
-
-    .circle-bottom {
-        position: fixed;
-        width: 978px;
-        height: 976px;
-        top: 400px;
-        left: 800px;
-    }
-  
+.attribution a {
+    color: white;
+}
